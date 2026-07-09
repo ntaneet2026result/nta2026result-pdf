@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NEET 2026 RESULT</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f2f2f2;
+}
+
+.container{
+    width:320px;
+    margin:80px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+h1{
+    color:red;
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+input{
+    width:90%;
+    padding:12px;
+    margin:10px 0;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#0066cc;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#004999;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>NEET 2026 RESULT</h1>
+
+<input
+type="text"
+id="application"
+placeholder="Application Number">
+
+<input
+type="password"
+id="password"
+placeholder="Password">
+
+<button onclick="downloadPDF()">
+Download Result
+</button>
+
+</div>
+
+<script>
+
+function downloadPDF(){
+
+var app=document.getElementById("application").value;
+
+var pass=document.getElementById("password").value;
+
+if(app=="260410192778" && pass=="Haku@nt26"){
+
+window.location.href="result.pdf";
+
+}
+
+else{
+
+alert("Invalid Application Number or Password.");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
